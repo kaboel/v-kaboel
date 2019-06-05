@@ -5,7 +5,13 @@
 </template>
 
 <script>
+    import { page } from 'vue-analytics';
     export default {
-        name: 'project'
+        name: 'project',
+        methods: {
+            track() {
+                page('/project');
+            }
+        }
     }
 </script>
