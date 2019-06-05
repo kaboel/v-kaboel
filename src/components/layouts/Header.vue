@@ -15,10 +15,10 @@
         <div id="navbarMenu" class="navbar-menu">
             <div class="navbar-end">
                 <div class="navbar-item has-text-centered">
-                    <a class="button is-black is-outlined" href="#">
+                    <b-button type="is-black" rounded outlined>
                         <font-awesome-icon :icon="['fas', 'envelope']" class="mr-sm fa-lg"></font-awesome-icon>
                         <b>Get in touch</b>
-                    </a>
+                    </b-button>
                 </div>
             </div>
         </div>
@@ -26,13 +26,15 @@
 </template>
 
 <script>
+    import BButton from "buefy/src/components/button/Button";
     export default {
         name: 'Header',
+        components: {BButton},
     }
 </script>
 
 <style scoped>
-    nav a {
+    nav button {
         font-family: Titillium Web, sans-serif;
         letter-spacing: -1px;
     }

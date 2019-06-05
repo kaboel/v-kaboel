@@ -3,8 +3,8 @@
         <div class="container">
             <div class="columns">
                 <div class="column is-8-desktop is-offset-2-desktop">
-                    <div class="mb-xl">
-                        <h1 class="title is-3 has-text-light motto ff-space">
+                    <div class="mb-xl mt-lg">
+                        <h1 class="title is-3 has-text-light ff-space">
                             Cook, Eat, Code, Repeat.
                         </h1>
                     </div>

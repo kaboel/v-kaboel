@@ -6,7 +6,7 @@
 
                     <img src="../assets/glasses.png" width="250">
                     <h1 class="title is-3 has-text-centered mb-lg mt-xl">
-                        A Code Junkie, Web Designer and Full Stack Developer
+                        A Code Junkie, Web Designer and Full Stack Web Developer
                     </h1>
                     <h1 class="subtitle is-4 has-text-centered titillium mt-lg">
                         I make things happen with
