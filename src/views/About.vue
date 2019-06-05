@@ -5,13 +5,7 @@
 </template>
 
 <script>
-    import { page } from 'vue-analytics';
     export default {
         name: 'about',
-        methods: {
-            track() {
-                page('/about');
-            }
-        }
     }
 </script>

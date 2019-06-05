@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
-import VueAnalytics from 'vue-analytics';
 import Buefy from 'buefy';
 import 'buefy/dist/buefy.css';
 import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
@@ -33,9 +32,6 @@ library.add(
 
 Vue.config.productionTip = false;
 
-Vue.use(VueAnalytics, {
-    id: 'UA-139040929-2'
-});
 Vue.use(Buefy);
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 

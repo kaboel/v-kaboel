@@ -7,16 +7,10 @@
 </template>
 
 <script>
-    import { page } from 'vue-analytics';
     import Header from "../components/layouts/Header";
     import Footer from "../components/layouts/Footer";
     export default {
         name: 'contacts',
         components: {Footer, Header},
-        methods: {
-            track() {
-                page('/contact');
-            }
-        }
     }
 </script>

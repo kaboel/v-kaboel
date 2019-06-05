@@ -42,18 +42,12 @@
 </template>
 
 <script>
-    import { page } from 'vue-analytics';
     import Header from "../components/layouts/Header";
     import Footer from "../components/layouts/Footer";
     import BTooltip from "buefy/src/components/tooltip/Tooltip";
     export default {
         name: 'home',
-        components: {BTooltip, Footer, Header},
-        methods: {
-            track() {
-                page('/')
-            }
-        }
+        components: {BTooltip, Footer, Header}
     }
 </script>
 
