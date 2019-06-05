@@ -12,7 +12,7 @@
                         I make things happen with
                         <b-tooltip
                                 label="Codes"
-                                type="is-dark" animated="">
+                                type="is-dark" animated>
                             <font-awesome-icon :icon="['fas', 'code']" class="has-text-black" data-tooltip="Codes"></font-awesome-icon>,
                         </b-tooltip>
                         for the
