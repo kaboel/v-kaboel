@@ -22,6 +22,14 @@ library.add(
     faSmileWink
 );
 
+//Fa Brand
+import {
+    faFacebook, faGithub, faLinkedin, faTwitter, faWhatsapp
+} from "@fortawesome/free-brands-svg-icons";
+library.add(
+    faGithub, faLinkedin, faFacebook, faTwitter, faWhatsapp
+);
+
 Vue.config.productionTip = false;
 
 Vue.use(Buefy);

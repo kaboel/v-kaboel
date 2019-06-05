@@ -2,7 +2,7 @@
     <nav class="navbar is-spaced" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <a href="#" class="navbar-item">
-                <img src="../../assets/K-Mid.png">
+                <img src="../../assets/Logo.png">
             </a>
 
             <div id="navbarBurger" class="navbar-burger burger" data-target="navbarMenu">
