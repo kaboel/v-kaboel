@@ -16,7 +16,7 @@
             <div class="navbar-end">
                 <div class="navbar-item has-text-centered">
                     <a class="button is-black is-outlined" href="#">
-                        <font-awesome-icon icon="envelope" class="mr-sm"></font-awesome-icon>
+                        <font-awesome-icon :icon="['fas', 'envelope']" class="mr-sm fa-lg"></font-awesome-icon>
                         <b>Get in touch</b>
                     </a>
                 </div>
@@ -32,7 +32,8 @@
 </script>
 
 <style scoped>
-    nav {
-        font-family: 'Dosis', sans-serif !important;
+    nav a {
+        font-family: Titillium Web, sans-serif;
+        letter-spacing: -1px;
     }
 </style>
