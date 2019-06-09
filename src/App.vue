@@ -11,14 +11,20 @@
 </script>
 
 <style>
-    @import url('https://fonts.googleapis.com/css?family=Space+Mono|Titillium+Web&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=Titillium+Web|Ubuntu+Mono&display=swap');
 
     * {
         font-family: 'Titillium Web', sans-serif;
+        scroll-behavior: smooth;
+    }
+
+    a, button {
+        outline: none;
     }
 
     .ff-space {
-        font-family: 'Space Mono', monospace !important;
+        font-family: 'Ubuntu Mono', monospace !important;
+        font-style: italic;
     }
 
     /* Margins */
@@ -64,4 +70,10 @@
     .pr-lg { padding-right: 2rem !important; }
     .pt-lg { padding-top: 2rem !important; }
     .pb-lg { padding-bottom: 2rem !important; }
+
+    .p-xl { padding: 5rem !important; }
+    .pl-xl { padding-left: 5rem !important; }
+    .pr-xl { padding-right: 5rem !important; }
+    .pt-xl { padding-top: 5rem !important; }
+    .pb-xl { padding-bottom: 5rem !important; }
 </style>
