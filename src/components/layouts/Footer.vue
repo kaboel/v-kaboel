@@ -4,7 +4,7 @@
             <div class="columns">
                 <div class="column is-8-desktop is-offset-2-desktop">
                     <div>
-                        <img src="../../assets/KS-logo-white.png" width="500">
+                        <img src="../../assets/KS-logo-white.png" width="400">
                     </div>
                     <div class="mb-xl">
                         <h1 class="title is-4 has-text-light ff-space">

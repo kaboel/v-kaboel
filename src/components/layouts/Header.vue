@@ -26,16 +26,19 @@
                             Available in 2 languages
                         </div>
                         <hr class="navbar-divider">
-                        <a class="navbar-item">
+                        <router-link class="navbar-item" to="/vitae/id">
                             <strong class="mr-sm">ID</strong> -
                             <span class="ml-sm">Bahasa Indonesia</span>
-                        </a>
-                        <a class="navbar-item">
+                        </router-link>
+                        <router-link class="navbar-item" to="/vitae/en">
                             <strong class="mr-sm">EN</strong> -
                             <span class="ml-sm">English</span>
-                        </a>
+                        </router-link>
                     </div>
                 </div>
+<!--                <a href="#projects" class="navbar-link has-text-black is-arrowless">-->
+<!--                    Projects-->
+<!--                </a>-->
                 <div class="navbar-item has-text-centered">
                     <router-link class="button is-rounded is-black is-outlined"
                                  active-class="is-focused"
