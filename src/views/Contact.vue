@@ -20,7 +20,7 @@
                 <div class="navbar-end">
                     <div class="navbar-item has-text-centered">
                         <b-tooltip label="Reset" class="f-control" type="is-dark" animated position="is-bottom">
-                            <a href="#" class="has-text-black pl-md pr-md">
+                            <a class="has-text-black pl-md pr-md" @click="resetForm">
                                 <font-awesome-icon :icon="['fas', 'undo']" class="fa-1x"></font-awesome-icon>
                             </a>
                         </b-tooltip>
@@ -38,7 +38,7 @@
                 <div class="hero-body">
                     <h1 class="subtitle is-2">
                         I'm glad you are trying to reach out.
-                    <br/>
+                        <br/>
                         Tell me what you need.
                     </h1>
                 </div>
@@ -49,16 +49,18 @@
                         <div class="column field">
                             <label class="label is-medium" for="name">Name</label>
                             <div class="control has-icons-left has-icons-right">
-                                <input name="surname" v-validate="'required:true|min:5'" type="text" v-model="surname"
+                                <input name="surname" v-validate="'required:true|min:5'" type="text" v-model="form.surname"
                                        id="name" class="input is-medium" placeholder="e.g. Faiq Kaboel">
                                 <span class="icon is-small is-left">
                                     <font-awesome-icon :icon="['far', 'smile-wink']"></font-awesome-icon>
                                 </span>
                                 <span class="icon is-small is-right" v-show="fields.surname && fields.surname.valid">
-                                    <font-awesome-icon class="has-text-success" :icon="['fas', 'check']"></font-awesome-icon>
+                                    <font-awesome-icon class="has-text-success"
+                                                       :icon="['fas', 'check']"></font-awesome-icon>
                                 </span>
                                 <span class="icon is-small is-right" v-if="errors.has('surname')">
-                                    <font-awesome-icon class="has-text-danger" :icon="['fas', 'times']"></font-awesome-icon>
+                                    <font-awesome-icon class="has-text-danger"
+                                                       :icon="['fas', 'times']"></font-awesome-icon>
                                 </span>
                                 <p class="help has-text-danger">{{ errors.first('surname') }}</p>
                             </div>
@@ -66,16 +68,18 @@
                         <div class="column field">
                             <label class="label is-medium" for="email">Email Address</label>
                             <div class="control has-icons-left has-icons-right">
-                                <input name="email" v-validate="'required:true|email'" type="email" v-model="email"
+                                <input name="email" v-validate="'required:true|email'" type="email" v-model="form.email"
                                        id="email" class="input is-medium" placeholder="e.g. kaboel@example.com">
                                 <span class="icon is-small is-left">
                                     <font-awesome-icon :icon="['fas', 'envelope']"></font-awesome-icon>
                                 </span>
                                 <span class="icon is-small is-right" v-show="fields.email && fields.email.valid">
-                                    <font-awesome-icon class="has-text-success" :icon="['fas', 'check']"></font-awesome-icon>
+                                    <font-awesome-icon class="has-text-success"
+                                                       :icon="['fas', 'check']"></font-awesome-icon>
                                 </span>
                                 <span class="icon is-small is-right" v-if="errors.has('email')">
-                                    <font-awesome-icon class="has-text-danger" :icon="['fas', 'times']"></font-awesome-icon>
+                                    <font-awesome-icon class="has-text-danger"
+                                                       :icon="['fas', 'times']"></font-awesome-icon>
                                 </span>
                             </div>
                             <p class="help has-text-danger">{{ errors.first('email') }}</p>
@@ -85,7 +89,7 @@
                         <div class="column field">
                             <label class="label is-medium" for="message">Message</label>
                             <div class="control">
-                                <textarea name="message" v-validate="'required:true|min:100'" v-model="message"
+                                <textarea name="message" v-validate="'required:true|min:100'" v-model="form.message"
                                           id="message" class="textarea is-medium"
                                           placeholder="e.g. Hey Faiq ! I really like your bio, I have this project in mind, we should talk about it. I look forward for us to meet. Coffee is on me !"
                                           rows="6"
@@ -110,21 +114,27 @@
 </template>
 
 <script>
-    import { Validator } from "vee-validate";
+    import {Validator} from "vee-validate";
     import BTooltip from "buefy/src/components/tooltip/Tooltip";
     export default {
         name: 'contacts',
         components: {BTooltip},
         data() {
-          return {
-              navToggle: false,
-              email: '',
-              surname: '',
-              message: ''
-          }
+            return {
+                form: {
+                    surname: null,
+                    email: null,
+                    message: null
+                },
+                $validator: Validator,
+                navToggle: false,
+                email: '',
+                surname: '',
+                message: ''
+            }
         },
         mounted() {
-            Validator.localize({
+            this.$validator.localize({
                 en: {
                     attributes: {
                         email: 'Email Address',
@@ -135,6 +145,12 @@
             });
         },
         methods: {
+            resetForm() {
+                Object.keys(this.form).forEach( (key) => {
+                    this.form[key] = null;
+                });
+                this.$validator.reset();
+            }
         },
         computed: {
             isFormValid() {
@@ -147,19 +163,19 @@
 </script>
 
 <style scoped>
-    @media(max-width: 1024px) {
+    @media (max-width: 1024px) {
         .f-control {
             margin-left: 7.5rem !important;
             margin-right: 7.5rem !important;
         }
     }
-    @media(max-width: 768px) {
+    @media (max-width: 768px) {
         .f-control {
             margin-left: 5rem !important;
             margin-right: 5rem !important;
         }
     }
-    @media(max-width: 640px) {
+    @media (max-width: 640px) {
         .f-control {
             margin-left: 2rem !important;
             margin-right: 2rem !important;
@@ -172,7 +188,6 @@
     nav a {
         font-family: Titillium Web, sans-serif;
     }
-
     .input[type=text]:focus,
     .input[type=email]:focus,
     textarea:focus {

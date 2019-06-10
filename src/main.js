@@ -5,13 +5,29 @@ import Buefy from 'buefy';
 import 'buefy/dist/buefy.css';
 import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
 import {library} from "@fortawesome/fontawesome-svg-core";
+import VeeValidate from "vee-validate";
 
 //Fa Solid
 import {
-    faCopyright, faEnvelope, faGlobe, faCode, faHeart, faTimes, faUndo, faAngleDoubleUp, faCheck
+    faCopyright,
+    faEnvelope,
+    faGlobe,
+    faCode,
+    faHeart,
+    faTimes,
+    faUndo,
+    faAngleDoubleUp,
+    faCheck,
+    faArrowLeft,
+    faSpinner,
+    faCogs, faDatabase
 } from "@fortawesome/free-solid-svg-icons";
 library.add(
-    faEnvelope, faCopyright, faGlobe, faCode, faHeart, faTimes, faCheck, faUndo, faAngleDoubleUp
+    faEnvelope, faCopyright, faGlobe,
+    faCode, faHeart, faTimes,
+    faCheck, faUndo, faAngleDoubleUp,
+    faArrowLeft, faSpinner, faCogs,
+    faDatabase
 );
 
 //Fa Regular
@@ -24,15 +40,27 @@ library.add(
 
 //Fa Brand
 import {
-    faFacebook, faGithub, faLinkedin, faTwitter, faWhatsapp
+    faAngular,
+    faCss3,
+    faFacebook, faGithub, faHtml5, faJs, faLess, faLinkedin, faPhp, faSass, faTwitter, faVuejs, faWhatsapp
 } from "@fortawesome/free-brands-svg-icons";
 library.add(
-    faGithub, faLinkedin, faFacebook, faTwitter, faWhatsapp
+    faGithub, faLinkedin, faFacebook,
+    faTwitter, faWhatsapp, faPhp,
+    faJs, faCss3, faLess, faSass,
+    faAngular, faVuejs, faHtml5
 );
 
 Vue.config.productionTip = false;
 
 Vue.use(Buefy);
+Vue.use(VeeValidate, {
+    classes: true,
+    classNames: {
+        invalid: 'is-danger'
+    }
+});
+
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 
 router.beforeEach((to, from, next) => {
@@ -56,14 +84,12 @@ router.beforeEach((to, from, next) => {
     // Turn the meta tag definitions into actual elements in the head.
     nearestWithMeta.meta.metaTags.map(tagDef => {
         const tag = document.createElement('meta');
-
         Object.keys(tagDef).forEach(key => {
             tag.setAttribute(key, tagDef[key]);
         });
 
         // We use this to track which meta tags we create, so we don't interfere with other ones.
         tag.setAttribute('data-vue-router-controlled', '');
-
         return tag;
     })
     // Add the meta tags to the document head.

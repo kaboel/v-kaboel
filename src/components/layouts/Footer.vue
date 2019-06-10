@@ -1,18 +1,17 @@
 <template>
-    <footer class="footer has-background-black pb-xl">
+    <footer id="footer" class="footer has-background-black pb-xl">
         <div class="container has-text-centered">
             <div class="columns">
                 <div class="column is-8-desktop is-offset-2-desktop">
                     <div>
-                        <img src="../../assets/KS-logo-white.png" width="400">
+                        <img src="../../assets/KS-logo-white.png" width="300">
                     </div>
                     <div class="mb-xl">
-                        <h1 class="title is-4 has-text-light ff-space">
+                        <h1 class="subtitle is-4 has-text-light ff-space">
                             Cook, Eat, Code, Repeat.
                         </h1>
                     </div>
-                    <hr/>
-                    <div class="mt-xl mb-lg">
+                    <div class="mb-lg">
                         <SocialButtons />
                     </div>
                     <div class="mb-md">
@@ -39,7 +38,7 @@
             </div>
         </div>
         <div class="is-pulled-right pr-lg">
-            <a href="#" class="has-text-light">
+            <a href="#" class="button is-black is-outlined has-text-light">
                 <font-awesome-icon :icon="['fas', 'angle-double-up']" class="fa-2x" ></font-awesome-icon>
             </a>
         </div>
@@ -53,3 +52,9 @@
         components: {SocialButtons}
     }
 </script>
+
+<style>
+    #footer {
+        padding-top:11.5rem;
+    }
+</style>

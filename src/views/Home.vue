@@ -3,6 +3,8 @@
         <Header />
         <Greetings />
         <About />
+        <Skills />
+        <Projects />
         <Footer />
     </div>
 </template>
@@ -12,8 +14,10 @@
     import Footer from "../components/layouts/Footer";
     import Greetings from "../components/Greetings";
     import About from "../components/About";
+    import Skills from "../components/Skills";
+    import Projects from "../components/Projects";
     export default {
         name: 'home',
-        components: {About, Greetings, Footer, Header}
+        components: {Projects, Skills, About, Greetings, Footer, Header}
     }
 </script>

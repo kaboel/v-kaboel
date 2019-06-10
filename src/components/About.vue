@@ -1,7 +1,7 @@
 <template>
     <section id="about" class="hero is-medium">
         <div class="hero-body has-background-black has-text-centered">
-            <div class="columns pb-lg">
+            <div class="columns">
                 <div class="column is-8-desktop is-offset-2-desktop">
                     <h1 class="title is-size-4 has-text-light">
                         Hey, I'm Faiq. It's very nice to meet you.
@@ -16,13 +16,6 @@
                 </div>
             </div>
         </div>
-        <div class="hero-foot">
-            <div class="columns" style="margin-top: -7.5rem;">
-                <div class="column is-10-desktop is-offset-1-desktop">
-
-                </div>
-            </div>
-        </div>
     </section>
 </template>
 
@@ -31,3 +24,9 @@
         name: 'about'
     }
 </script>
+
+<style scoped>
+    .columns {
+        padding-bottom: 8rem !important;
+    }
+</style>

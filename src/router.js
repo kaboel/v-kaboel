@@ -4,6 +4,7 @@ import Router from 'vue-router'
 Vue.use(Router);
 
 export default new Router({
+    mode: 'history',
     routes: [
         {
             path: '/',
@@ -36,6 +37,14 @@ export default new Router({
             meta: {
                 title: 'Faiq Allam | Queue up a meeting'
             }
-        }
+        },
+        {
+            path: '*',
+            name: '404',
+            component: () => import('./views/NotFound'),
+            meta: {
+                title: 'Faiq Allam | Page Not Found'
+            }
+        },
     ],
 })
