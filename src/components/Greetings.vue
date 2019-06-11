@@ -2,7 +2,7 @@
     <section id="greetings" class="hero">
         <div class="hero-body pl-lg pr-lg" style="padding-top: 0">
             <div class="container has-text-centered">
-                <img src="../assets/glasses.png" width="200">
+                <img src="../assets/glasses.png">
                 <h1 class="title is-3 has-text-centered mb-lg mt-xl">
                     A Code Junkie, and Full Stack Web Developer
                 </h1>
@@ -46,7 +46,7 @@
             </div>
         </div>
         <div class="has-text-centered mt-xl">
-            <img src="../assets/programmer.png" width="800" style="margin-bottom: -.5rem;">
+            <img src="../assets/programmer.png" style="margin-bottom: -.5rem;">
         </div>
     </section>
 </template>

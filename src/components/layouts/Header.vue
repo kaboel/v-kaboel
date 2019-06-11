@@ -2,7 +2,7 @@
     <nav class="navbar is-spaced is-transparent" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <a class="navbar-item" href="#">
-                <img src="../../assets/KS-skillet-black.png" alt="Faiq Allam | A Code Junkie... oh God, I've said those too much">
+                <img src="../../assets/KS-skillet-black-128x128.png" alt="Faiq Allam | A Code Junkie... oh God, I've said those too much">
             </a>
 
             <div id="navbarBurger" class="navbar-burger burger"
