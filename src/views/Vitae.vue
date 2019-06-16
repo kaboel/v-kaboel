@@ -3,7 +3,7 @@
         <nav class="navbar is-spaced has-shadow">
             <div class="navbar-brand has-text-centered">
                 <a class="is-size-4 navbar-item" href="/">
-                    <img src="../assets/KS-logo-black-160.png">
+                    <img src="../assets/KS-logo-black-160.png" alt="Faiq Allam | A Code Junkie, and Full Stack Web Developer">
                 </a>
 
                 <div id="navbarBurger" class="navbar-burger burger"
@@ -48,37 +48,45 @@
                 </div>
             </div>
         </div>
-        <div class="loading">
-            <iframe class="file" :src="getData($route.params.lang)"></iframe>
+        <div class="view">
+            <b-loading :is-full-page="false" :active.sync="isLoading"></b-loading>
+            <iframe id="file" :src="getData($route.params.lang)"></iframe>
         </div>
 
     </div>
 </template>
 <script>
     import BTooltip from "buefy/src/components/tooltip/Tooltip";
+    import BLoading from "buefy/src/components/loading/Loading";
     export default {
         name: 'vitae',
+        components: {BLoading, BTooltip},
+        data() {
+            return {
+                navToggle: false,
+                isLoading: false
+            }
+        },
         created() {
             const lang = this.$route.params.lang;
             if(lang !== 'id' && lang !== 'en') {
                 this.$router.push('/*');
             }
         },
-        components: {BTooltip},
-        data() {
-            return {
-                navToggle: false,
-                lang : this.$route.params.lang,
-                dataView: document.getElementById('dataView'),
-                loading: true
+        mounted() {
+            const loading = this.$loading.open();
+            const vitae = document.getElementById('file');
+            vitae.onload = (e) => {
+                e.preventDefault();
+                loading.close();
             }
         },
         methods: {
             getData(lang) {
                 if(lang === 'id') {
-                    return 'https://drive.google.com/file/d/1Zzj1WYdDpXo3aNUy0ehDNOqSfuBt8lNb/preview';
+                    return 'https://drive.google.com/file/d/1d5byvA9geJr4dQz8DJmANqZtsEhGi3F-/preview';
                 } else {
-                    return 'https://drive.google.com/file/d/1jBQlxDZkUCZpdJeCtT3bYr3QMecMgShz/preview';
+                    return 'https://drive.google.com/file/d/1EKbABTmGpP4N8i4Q-kZjV3kAoFZF3j2K/preview';
                 }
             }
         }
@@ -104,8 +112,7 @@
             margin-right: 2rem !important;
         }
     }
-
-    .file {
+    #file {
         position: absolute;
         margin-left: 10%;
         height: 82.5%;
@@ -114,16 +121,11 @@
         -moz-box-shadow: 1px 2px 4px #444;
         box-shadow: 1px 2px 4px #444;
     }
-
     @media(max-width: 700px) {
-        .file {
+        #file {
             width: 100% !important;
             height: 100% !important;
             margin-left: 0 !important;
         }
-    }
-    .loading {
-        background:url(../assets/loading.gif) center center no-repeat;;
-        min-height: 200px;
     }
 </style>

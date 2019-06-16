@@ -2,7 +2,7 @@
     <nav class="navbar is-spaced is-transparent" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <a class="navbar-item" href="#">
-                <img src="../../assets/KS-skillet-black-128x128.png" alt="Faiq Allam | A Code Junkie... oh God, I've said those too much">
+                <img src="../../assets/KS-skillet-black-128x128.png" alt="Faiq Allam | A Code Junkie, and Full Stack Web Developer">
             </a>
 
             <div id="navbarBurger" class="navbar-burger burger"
@@ -36,17 +36,19 @@
                         </router-link>
                     </div>
                 </div>
-<!--                <a href="#projects" class="navbar-link has-text-black is-arrowless">-->
-<!--                    Projects-->
-<!--                </a>-->
+                <a href="#projects" class="navbar-link has-text-black is-arrowless">
+                    My Projects
+                </a>
                 <div class="navbar-item has-text-centered">
-                    <router-link class="button is-rounded is-black is-outlined"
-                                 active-class="is-focused"
-                                 exact-active-class="is-focused"
-                                 to="/contact">
-                        <font-awesome-icon :icon="['fas', 'envelope']" class="mr-sm fa-lg"></font-awesome-icon>
-                        <b>Get in touch</b>
-                    </router-link>
+                    <b-tooltip label="Under Maintenance" type="is-warning" position="is-bottom">
+                        <router-link class="button is-rounded is-black is-outlined"
+                                     active-class="is-focused"
+                                     exact-active-class="is-focused"
+                                     to="/contact">
+                            <font-awesome-icon :icon="['fas', 'envelope']" class="mr-sm fa-lg"></font-awesome-icon>
+                            <b>Get in touch</b>
+                        </router-link>
+                    </b-tooltip>
                 </div>
             </div>
         </div>
@@ -54,8 +56,10 @@
 </template>
 
 <script>
+    import BTooltip from "buefy/src/components/tooltip/Tooltip";
     export default {
         name: 'Header',
+        components: {BTooltip},
         data() {
             return {
                 navToggle : false

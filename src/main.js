@@ -1,8 +1,9 @@
-import Vue from 'vue'
-import App from './App.vue'
-import router from './router'
+import Vue from 'vue';
+import App from './App.vue';
+import router from './router';
 import Buefy from 'buefy';
-import 'buefy/dist/buefy.css';
+import 'buefy/dist/buefy.min.css';
+import 'bulma-divider/dist/css/bulma-divider.min.css';
 import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
 import {library} from "@fortawesome/fontawesome-svg-core";
 import VeeValidate from "vee-validate";
@@ -20,14 +21,27 @@ import {
     faCheck,
     faArrowLeft,
     faSpinner,
-    faCogs, faDatabase
+    faCogs,
+    faDatabase,
+    faTools,
+    faCheckCircle,
+    faInfoCircle,
+    faExclamationTriangle,
+    faExclamationCircle,
+    faArrowUp,
+    faAngleUp, faAngleRight, faAngleLeft, faAngleDown, faEye, faEyeSlash, faCaretDown, faCaretUp, faUpload
 } from "@fortawesome/free-solid-svg-icons";
 library.add(
     faEnvelope, faCopyright, faGlobe,
     faCode, faHeart, faTimes,
     faCheck, faUndo, faAngleDoubleUp,
     faArrowLeft, faSpinner, faCogs,
-    faDatabase
+    faDatabase, faCheckCircle, faInfoCircle,
+    faExclamationTriangle, faExclamationCircle,
+    faArrowUp, faAngleUp, faAngleRight,
+    faAngleLeft, faAngleDown, faEye,
+    faEyeSlash, faCaretDown, faCaretUp,
+    faUpload
 );
 
 //Fa Regular
@@ -48,20 +62,25 @@ library.add(
     faGithub, faLinkedin, faFacebook,
     faTwitter, faWhatsapp, faPhp,
     faJs, faCss3, faLess, faSass,
-    faAngular, faVuejs, faHtml5
+    faAngular, faVuejs, faHtml5,
+    faTools
 );
 
 Vue.config.productionTip = false;
 
-Vue.use(Buefy);
+Vue.component('font-awesome-icon', FontAwesomeIcon);
+
+Vue.use(Buefy, {
+    defaultIconComponent: 'font-awesome-icon',
+    defaultIconPack: 'fas',
+});
 Vue.use(VeeValidate, {
     classes: true,
     classNames: {
-        invalid: 'is-danger'
+        invalid: 'is-danger',
+        valid: 'is-success'
     }
 });
-
-Vue.component('font-awesome-icon', FontAwesomeIcon);
 
 router.beforeEach((to, from, next) => {
     // This goes through the matched routes from last to first, finding the closest route with a title.

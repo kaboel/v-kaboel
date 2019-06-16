@@ -11,7 +11,7 @@
                         I have a very high level of curiosity, which maybe dangerous but also can be handy when it comes to a complex project.
                         I'm also a confident, eager to find out something new, and perpetually improving
                         my skill set in what I love, The Web. I am currently pursuing a diploma of Technical Information
-                        at State Polytechnic of Malang, and will graduate in 2023.
+                        at State Polytechnic of Malang, and will graduate in 2022.
                     </h2>
                 </div>
             </div>
@@ -28,5 +28,10 @@
 <style scoped>
     .columns {
         padding-bottom: 8rem !important;
+    }
+    @media(max-width: 1024px) {
+        .columns {
+            padding-bottom: 0;
+        }
     }
 </style>

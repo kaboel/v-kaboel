@@ -1,12 +1,19 @@
 <template>
     <div id="app">
-        <router-view/>
+        <b-loading :is-full-page="true"></b-loading>
+        <router-view />
     </div>
 </template>
 
 <script>
+    import BLoading from "buefy/src/components/loading/Loading";
     export default {
-        name: 'app'
+        name: 'app',
+        components: {BLoading},
+        mounted() {
+            const loading = this.$loading.open();
+            setTimeout(() => loading.close(), 3*500)
+        }
     }
 </script>
 
@@ -20,6 +27,10 @@
 
     a, button {
         outline: none;
+        -webkit-transition: all .2s ease-in-out;
+        -moz-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
     }
 
     .ff-space {
@@ -76,4 +87,14 @@
     .pr-xl { padding-right: 5rem !important; }
     .pt-xl { padding-top: 5rem !important; }
     .pb-xl { padding-bottom: 5rem !important; }
+
+    .loading-overlay .loading-background {
+        background: #0A0A0A !important;
+        filter: opacity(75%);
+    }
+
+    .is-divider-vertical[data-content].has-background-light::after,
+    .is-divider[data-content].has-background-light::after {
+        background: #f5f5f5 !important;
+    }
 </style>

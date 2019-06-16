@@ -1,6 +1,6 @@
 <template>
     <b-tooltip label="Chat me on Whatsapp" type="is-light" animated>
-        <a class="has-text-light pl-md pr-md">
+        <a class="has-text-light pl-md pr-md" href="https://wa.me/6181515291890" target="_blank">
             <font-awesome-icon :icon="['fab', 'whatsapp']" class="fa-2x"></font-awesome-icon>
         </a>
     </b-tooltip>

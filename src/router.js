@@ -19,7 +19,7 @@ export default new Router({
             name: 'vitae',
             component: () => import('./views/Vitae'),
             meta: {
-                title: 'Faiq Allam | Curriculum Vitae'
+                title: 'Faiq Allam | My Curriculum Vitae'
             }
         },
         {
@@ -35,7 +35,7 @@ export default new Router({
             name: 'project',
             component: () => import('./views/Project'),
             meta: {
-                title: 'Faiq Allam | Queue up a meeting'
+                title: 'Faiq Allam | Setup a new project'
             }
         },
         {
@@ -43,7 +43,7 @@ export default new Router({
             name: '404',
             component: () => import('./views/NotFound'),
             meta: {
-                title: 'Faiq Allam | Page Not Found'
+                title: '404 | Page Not Found'
             }
         },
     ],

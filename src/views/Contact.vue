@@ -1,9 +1,9 @@
 <template>
-    <form id="contact" autocomplete="off">
+    <form id="contact" autocomplete="off" @submit="submitForm($event)">
         <nav class="navbar is-spaced has-shadow">
             <div class="navbar-brand has-text-centered">
                 <a class="is-size-4 navbar-item" href="/">
-                    <img src="../assets/KS-logo-black-160.png">
+                    <img src="../assets/KS-logo-black-160.png" alt="Faiq Allam | A Code Junkie... oh God, I've said those too much">
                 </a>
 
                 <div id="navbarBurger" class="navbar-burger burger"
@@ -60,7 +60,7 @@
                                 </span>
                                 <span class="icon is-small is-right" v-if="errors.has('surname')">
                                     <font-awesome-icon class="has-text-danger"
-                                                       :icon="['fas', 'times']"></font-awesome-icon>
+                                                       :icon="['fas', 'exclamation-circle']"></font-awesome-icon>
                                 </span>
                                 <p class="help has-text-danger">{{ errors.first('surname') }}</p>
                             </div>
@@ -79,7 +79,7 @@
                                 </span>
                                 <span class="icon is-small is-right" v-if="errors.has('email')">
                                     <font-awesome-icon class="has-text-danger"
-                                                       :icon="['fas', 'times']"></font-awesome-icon>
+                                                       :icon="['fas', 'exclamation-circle']"></font-awesome-icon>
                                 </span>
                             </div>
                             <p class="help has-text-danger">{{ errors.first('email') }}</p>
@@ -87,6 +87,14 @@
                     </div>
                     <div class="columns">
                         <div class="column field">
+                            <span class="is-pulled-right mt-sm mr-sm" v-show="fields.message && fields.message.valid">
+                                <font-awesome-icon class="has-text-success fa-lg"
+                                                   :icon="['fas', 'check']"></font-awesome-icon>
+                            </span>
+                            <span class="is-pulled-right mt-sm mr-sm" v-if="errors.has('message')">
+                                <font-awesome-icon class="has-text-danger fa-lg"
+                                                   :icon="['fas', 'exclamation-circle']"></font-awesome-icon>
+                            </span>
                             <label class="label is-medium" for="message">Message</label>
                             <div class="control">
                                 <textarea name="message" v-validate="'required:true|min:100'" v-model="form.message"
@@ -143,8 +151,26 @@
                     }
                 }
             });
+            this.$notification.open({
+                duration: 10*1000,
+                message: "This page is <b>Under Maintenance</b>.<br>Please visit again next time.",
+                type: 'is-warning',
+                position: 'is-bottom-right',
+                hasIcon: true
+            });
         },
         methods: {
+            submitForm(e) {
+                e.preventDefault();
+                this.$snackbar.open({
+                    duration: 10*1000,
+                    message: "I'm sorry but this page is <b>Under Maintenance</b>.<br>Please visit and try again next time.",
+                    type: 'is-warning',
+                    position: 'is-bottom-right',
+                    actionText: 'Ok'
+                });
+                this.resetForm();
+            },
             resetForm() {
                 Object.keys(this.form).forEach( (key) => {
                     this.form[key] = null;
@@ -197,6 +223,11 @@
     .input[type=text]:focus.is-danger,
     .input[type=email]:focus.is-danger,
     textarea:focus.is-danger {
-        border-color: red !important;
+        border-color: #ff3860 !important;
+    }
+    .input[type=text]:focus.is-success,
+    .input[type=email]:focus.is-success,
+    textarea:focus.is-success {
+        border-color: #23d160 !important;
     }
 </style>
