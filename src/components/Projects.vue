@@ -37,6 +37,18 @@
             </div>
         </div>
         <div class="columns">
+            <div class="column has-text-centered mb-xl">
+                <p class="subtitle is-4">
+                    You can find more of my personal projects on
+                </p>
+                <b-tooltip label="Github" position="is-right" type="is-dark" animated>
+                    <a href="https://github.com/kaboel" target="_blank">
+                        <font-awesome-icon :icon="['fab', 'github']" class="has-text-dark fa-4x"></font-awesome-icon>
+                    </a>
+                </b-tooltip>
+            </div>
+        </div>
+        <div class="columns">
             <div class="column is-11-desktop">
                 <div class="tile is-ancestor">
                     <div class="tile is-parent">
@@ -49,9 +61,11 @@
                                 </div>
                                 <div class="is-divider-vertical has-background-light" data-content="</>"></div>
                                 <div class="column level-item pt-lg pb-lg pr-xl pl-xl">
-                                    <router-link class="button is-black is-outlined is-medium is-rounded" to="/project">
-                                        <strong>Start a project</strong>
-                                    </router-link>
+                                    <b-tooltip label="Under Maintenance" position="is-bottom" type="is-warning" animated>
+                                        <a class="button is-black is-outlined is-medium is-rounded" disabled>
+                                            <strong>Start a project</strong>
+                                        </a>
+                                    </b-tooltip>
                                 </div>
                             </div>
                         </div>
@@ -64,9 +78,10 @@
 
 <script>
     import Flickity from 'vue-flickity';
+    import BTooltip from "buefy/src/components/tooltip/Tooltip";
     export default {
         name: 'projects',
-        components: {Flickity},
+        components: {BTooltip, Flickity},
         data() {
             return {
                 flickityOptions: {

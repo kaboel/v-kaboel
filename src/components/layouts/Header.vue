@@ -41,13 +41,10 @@
                 </a>
                 <div class="navbar-item has-text-centered">
                     <b-tooltip label="Under Maintenance" type="is-warning" position="is-bottom">
-                        <router-link class="button is-rounded is-black is-outlined"
-                                     active-class="is-focused"
-                                     exact-active-class="is-focused"
-                                     to="/contact">
+                        <a class="button is-rounded is-black is-outlined" disabled>
                             <font-awesome-icon :icon="['fas', 'envelope']" class="mr-sm fa-lg"></font-awesome-icon>
                             <b>Get in touch</b>
-                        </router-link>
+                        </a>
                     </b-tooltip>
                 </div>
             </div>
