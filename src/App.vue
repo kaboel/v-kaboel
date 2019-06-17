@@ -97,4 +97,8 @@
     .is-divider[data-content].has-background-light::after {
         background: #f5f5f5 !important;
     }
+
+    .navbar-link:not(.is-arrowless)::after {
+        border-color: #0A0A0A !important;
+    }
 </style>

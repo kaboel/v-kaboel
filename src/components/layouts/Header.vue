@@ -17,8 +17,14 @@
 
         <div id="navbarMenu" class="navbar-menu" :class="{'is-active' : navToggle}">
             <div class="navbar-end">
-                <div class="navbar-item has-text-centered has-dropdown is-hoverable">
-                    <a class="navbar-link has-text-black is-arrowless">
+                <a href="#about" class="navbar-link has-text-black is-arrowless">
+                    About
+                </a>
+                <a href="#projects" class="navbar-link has-text-black is-arrowless">
+                    Projects
+                </a>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link has-text-black">
                         Curriculum Vitae
                     </a>
                     <div class="navbar-dropdown is-right">
@@ -36,9 +42,6 @@
                         </router-link>
                     </div>
                 </div>
-                <a href="#projects" class="navbar-link has-text-black is-arrowless">
-                    My Projects
-                </a>
                 <div class="navbar-item has-text-centered">
                     <b-tooltip label="Under Maintenance" type="is-warning" position="is-bottom">
                         <a class="button is-rounded is-black is-outlined" disabled>
