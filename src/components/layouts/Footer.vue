@@ -7,9 +7,9 @@
                         <img src="../../assets/KS-logo-white-300.png">
                     </div>
                     <div class="mb-xl">
-                        <h1 class="subtitle is-4 has-text-light ff-space">
+                        <p class="subtitle is-4 has-text-light ff-space">
                             Cook, Eat, Code, Repeat.
-                        </h1>
+                        </p>
                     </div>
                     <div class="mb-lg">
                         <SocialButtons />

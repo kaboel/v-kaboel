@@ -11,7 +11,7 @@ export default new Router({
             name: 'home',
             component: () => import('./views/Home'),
             meta: {
-                title: 'Faiq Allam | A Code Junkie, Full Stack, but prefer Back-end'
+                title: 'Faiq Allam | A Code Junkie, and Full Stack Web Developer'
             }
         },
         {
@@ -43,7 +43,7 @@ export default new Router({
             name: '404',
             component: () => import('./views/NotFound'),
             meta: {
-                title: '404 | Page Not Found'
+                title: 'Faiq Allam | Page Not Found'
             }
         },
     ],

@@ -6,7 +6,7 @@
                 <h1 class="title is-3 has-text-centered mb-lg mt-xl">
                     A Code Junkie, and Full Stack Web Developer
                 </h1>
-                <h1 class="subtitle is-4 has-text-centered titillium mt-lg">
+                <h2 class="subtitle is-4 has-text-centered titillium mt-lg">
                     I make things happen with
                     <b-tooltip
                             label="Codes"
@@ -42,7 +42,7 @@
                         </font-awesome-icon>
                     </b-tooltip>
                     it!
-                </h1>
+                </h2>
             </div>
         </div>
         <div class="has-text-centered mt-xl">

@@ -2,8 +2,8 @@
     <section id="projects">
         <div class="columns">
             <div class="column has-text-centered mb-xl">
-                <h1 class="title is-3">My Recent Works</h1>
-                <h2 class="subtitle is-5">Here are some of my recent works.</h2>
+                <p class="title is-3">My Recent Works</p>
+                <p class="subtitle is-5">Here are some of my recent works.</p>
                 <flickity ref="flickity" :options="flickityOptions">
                     <div class="carousel-cell">
                         <div class="columns">
