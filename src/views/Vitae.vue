@@ -41,10 +41,10 @@
         <div class="container">
             <div class="columns">
                 <div class="column is-8-desktop is-offset-2-desktop p-lg has-text-centered">
-                    <h1 class="subtitle" id="dataView">
+                    <o class="subtitle" id="dataView">
                         Curriculum Vitae -
                         <strong>{{ $route.params.lang }}</strong>
-                    </h1>
+                    </o>
                 </div>
             </div>
         </div>

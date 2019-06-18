@@ -5,14 +5,14 @@
                 <div class="column is-8-desktop is-offset-2-desktop mt-lg">
                     <div class="hero">
                         <div class="hero-body has-text-centered has-text-black pt-sm ">
-                            <h1 class="title is-xl watermark">404</h1>
+                            <p class="title is-xl watermark">404</p>
                             <img src="../assets/KS-logo-black-400.png" class="watermark">
                             <hr>
-                            <h1 class="subtitle is-3 mt-lg">
+                            <p class="subtitle is-3 mt-lg">
                                 I don't think this is the page you looking for.
                             <br>
                                 Let's get you back on track !
-                            </h1>
+                            </p>
                             <router-link class="button is-black is-outlined is-rounded"
                                          to="/">
                                 <strong>Click me !</strong>

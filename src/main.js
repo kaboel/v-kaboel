@@ -56,14 +56,26 @@ library.add(
 import {
     faAngular,
     faCss3,
-    faFacebook, faGithub, faHtml5, faJs, faLess, faLinkedin, faPhp, faSass, faTwitter, faVuejs, faWhatsapp
+    faFacebook,
+    faGithub,
+    faHtml5,
+    faJs,
+    faLess,
+    faLinkedin,
+    faNode,
+    faNodeJs,
+    faPhp,
+    faSass,
+    faTwitter,
+    faVuejs,
+    faWhatsapp
 } from "@fortawesome/free-brands-svg-icons";
 library.add(
     faGithub, faLinkedin, faFacebook,
     faTwitter, faWhatsapp, faPhp,
     faJs, faCss3, faLess, faSass,
     faAngular, faVuejs, faHtml5,
-    faTools
+    faTools, faNodeJs, faNode
 );
 
 Vue.config.productionTip = false;

@@ -36,11 +36,11 @@
         <div class="container pr-lg pl-lg">
             <div class="hero has-text-centered">
                 <div class="hero-body">
-                    <h1 class="subtitle is-2">
+                    <p class="subtitle is-2">
                         I'm glad you are trying to reach out.
                         <br/>
                         Tell me what you need.
-                    </h1>
+                    </p>
                 </div>
             </div>
             <div class="columns mt-md">

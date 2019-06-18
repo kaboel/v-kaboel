@@ -1,5 +1,8 @@
 <template>
     <section id="skills">
+        <div class="has-text-centered mb-lg title">
+            <p class="subtitle is-5">Here are some of the skills I acquire over the years.</p>
+        </div>
         <div class="columns mb-xl">
             <div class="column is-11-desktop box p-lg p-lg has-background-light">
                 <div class="columns">
@@ -13,36 +16,44 @@
                                 <p class="title is-6">Spoken Languages</p>
                                 <div class="tags is-centered">
                                     <span class="tag is-light is-medium">HTML</span>
-                                    <span class="tag is-light is-medium">CSS</span>
-                                    <span class="tag is-light is-medium">Sass</span>
-                                    <span class="tag is-light is-medium">Less</span>
                                     <span class="tag is-light is-medium">Javascript</span>
-                                    <span class="tag is-light is-medium">Typescript</span>
-                                    <span class="tag is-light is-medium">Blade</span>
+                                    <span class="tag is-light is-medium">CSS</span>
                                 </div>
                             </div>
                             <div class="box">
                                 <p class="title is-6">Familiar Frameworks</p>
-                                <div class="tags is-centered">
-                                    <span class="tag is-light is-medium">Bootstrap</span>
-                                    <span class="tag is-light is-medium">Bulma</span>
-                                    <span class="tag is-light is-medium">Materialize</span>
-                                    <span class="tag is-light is-medium">Angular Material</span>
-                                    <span class="tag is-light is-medium">Jquery</span>
-                                    <span class="tag is-light is-medium">Vue.js</span>
-                                    <span class="tag is-light is-medium">Angular</span>
+                                <div class="columns">
+                                    <div class="column">
+                                        <font-awesome-icon :icon="['fab', 'css3']" class="fa-2x"></font-awesome-icon><br>
+                                        <span class="title is-6">CSS</span>
+                                        <div class="is-divider m-sm"></div>
+                                        <div class="tags is-centered">
+                                            <span class="tag is-light is-medium">Bootstrap</span>
+                                            <span class="tag is-light is-medium">Bulma</span>
+                                            <span class="tag is-light is-medium">Vuetify</span>
+                                        </div>
+                                    </div>
+                                    <div class="is-divider-vertical p-sm mb-sm"></div>
+                                    <div class="column">
+                                        <font-awesome-icon :icon="['fab', 'js']" class="fa-2x"></font-awesome-icon><br>
+                                        <span class="title is-6">Javascript</span>
+                                        <div class="is-divider m-sm"></div>
+                                        <div class="tags is-centered">
+                                            <span class="tag is-light is-medium">Jquery</span>
+                                            <span class="tag is-light is-medium">Vue.js</span>
+                                            <span class="tag is-light is-medium">Vuex</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="box">
-                                <p class="title is-6">Tools Used</p>
+                                <p class="title is-6">Dev Tools</p>
                                 <div class="tags is-centered">
-                                    <span class="tag is-light is-medium">Webstorm</span>
-                                    <span class="tag is-light is-medium">Adobe Photoshop</span>
+                                    <span class="tag is-light is-medium">WebStorm</span>
                                     <span class="tag is-light is-medium">GIMP</span>
                                     <span class="tag is-light is-medium">npm</span>
                                     <span class="tag is-light is-medium">Yarn</span>
                                     <span class="tag is-light is-medium">Terminal</span>
-                                    <span class="tag is-light is-medium">TravisCI</span>
                                 </div>
                             </div>
                         </div>
@@ -55,17 +66,25 @@
                         </div>
                         <div class="has-text-centered mb-md">
                             <div class="box">
-                                <p class="title is-6">Familiar SQL Databases</p>
-                                <div class="tags is-centered">
-                                    <span class="tag is-light is-medium">MySQL</span>
-                                    <span class="tag is-light is-medium">PostgreSQL</span>
-                                </div>
-                            </div>
-                            <div class="box">
-                                <p class="title is-6">Familiar NoSQL Databases</p>
-                                <div class="tags is-centered">
-                                    <span class="tag is-light is-medium">MongoDB</span>
-                                    <span class="tag is-light is-medium">Firestore</span>
+                                <p class="title is-6">Familiar Databases</p>
+                                <div class="columns">
+                                    <div class="column">
+                                        <span class="title is-6">Relational</span>
+                                        <div class="is-divider m-sm"></div>
+                                        <div class="tags is-centered">
+                                            <span class="tag is-light is-medium">MySQL</span>
+                                            <span class="tag is-light is-medium">Postgres</span>
+                                        </div>
+                                    </div>
+                                    <div class="is-divider-vertical p-sm mb-sm"></div>
+                                    <div class="column">
+                                        <span class="title is-6">NoSQL</span>
+                                        <div class="is-divider m-sm"></div>
+                                        <div class="tags is-centered">
+                                            <span class="tag is-light is-medium">Firestore</span>
+                                            <span class="tag is-light is-medium">MongoDB</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="box">
@@ -77,11 +96,12 @@
                                 </div>
                             </div>
                             <div class="box">
-                                <p class="title is-6">Tools Used</p>
+                                <p class="title is-6">Dev Tools</p>
                                 <div class="tags is-centered">
-                                    <span class="tag is-light is-medium">Datagrip</span>
+                                    <span class="tag is-light is-medium">DataGrip</span>
+                                    <span class="tag is-light is-medium">SQLite</span>
                                     <span class="tag is-light is-medium">pgAdmin</span>
-                                    <span class="tag is-light is-medium">Studio 3T</span>
+                                    <span class="tag is-light is-medium">Studio 3T/Robo 3T</span>
                                     <span class="tag is-light is-medium">Terminal</span>
                                 </div>
                             </div>
@@ -99,32 +119,43 @@
                                 <div class="tags is-centered">
                                     <span class="tag is-light is-medium">PHP</span>
                                     <span class="tag is-light is-medium">Node.js</span>
-                                    <span class="tag is-light is-medium">Python</span>
                                 </div>
                             </div>
                             <div class="box">
                                 <p class="title is-6">Familiar Frameworks</p>
-                                <div class="tags is-centered">
-                                    <span class="tag is-light is-medium">Laravel</span>
-                                    <span class="tag is-light is-medium">Codeigniter</span>
-                                    <span class="tag is-light is-medium">Yii</span>
-                                    <span class="tag is-light is-medium">Slim</span>
-                                    <span class="tag is-light is-medium">Lumen</span>
-                                    <span class="tag is-light is-medium">Express.js</span>
-                                    <span class="tag is-light is-medium">Django</span>
+                                <div class="columns">
+                                    <div class="column">
+                                        <font-awesome-icon :icon="['fab', 'php']" class="fa-2x"></font-awesome-icon><br>
+                                        <span class="title is-6">PHP</span>
+                                        <div class="is-divider m-sm"></div>
+                                        <div class="tags is-centered">
+                                            <span class="tag is-light is-medium">Laravel</span>
+                                            <span class="tag is-light is-medium">Lumen</span>
+                                            <span class="tag is-light is-medium">Slim</span>
+                                        </div>
+                                    </div>
+                                    <div class="is-divider-vertical p-sm mb-sm"></div>
+                                    <div class="column">
+                                        <font-awesome-icon :icon="['fab', 'node-js']" class="fa-2x"></font-awesome-icon><br>
+                                        <span class="title is-6">Node.js</span>
+                                        <div class="is-divider m-sm"></div>
+                                        <div class="tags is-centered">
+                                            <span class="tag is-light is-medium">Express.js</span>
+                                            <span class="tag is-light is-medium">Meteor.js</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="box">
-                                <p class="title is-6">Tools Used</p>
+                                <p class="title is-6">Dev Tools</p>
                                 <div class="tags is-centered">
-                                    <span class="tag is-light is-medium">Phpstorm</span>
-                                    <span class="tag is-light is-medium">Webstorm</span>
-                                    <span class="tag is-light is-medium">PyCharm</span>
+                                    <span class="tag is-light is-medium">PhpStorm</span>
+                                    <span class="tag is-light is-medium">WebStorm</span>
+                                    <span class="tag is-light is-medium">Postman</span>
                                     <span class="tag is-light is-medium">Composer</span>
                                     <span class="tag is-light is-medium">npm</span>
-                                    <span class="tag is-light is-medium">pip</span>
+                                    <span class="tag is-light is-medium">Yarn</span>
                                     <span class="tag is-light is-medium">Terminal</span>
-                                    <span class="tag is-light is-medium">Scrutinizer</span>
                                 </div>
                             </div>
                         </div>
@@ -144,11 +175,17 @@
 
 <style scoped>
     #skills {
-        margin-top: -10rem;
+        margin-top: -13rem;
+    }
+    #skills div.title p {
+        color: #f5f5f5;
     }
     @media(max-width: 1024px) {
         #skills {
-            margin-top: inherit;
+            margin-top: initial;
+        }
+        #skills div.title p {
+            color: initial;
         }
     }
     .watermark{
