@@ -54,6 +54,7 @@
                                     <span class="tag is-light is-medium">npm</span>
                                     <span class="tag is-light is-medium">Yarn</span>
                                     <span class="tag is-light is-medium">Terminal</span>
+                                    <span class="tag is-light is-medium">GitHub</span>
                                 </div>
                             </div>
                         </div>
@@ -156,6 +157,7 @@
                                     <span class="tag is-light is-medium">npm</span>
                                     <span class="tag is-light is-medium">Yarn</span>
                                     <span class="tag is-light is-medium">Terminal</span>
+                                    <span class="tag is-light is-medium">GitHub</span>
                                 </div>
                             </div>
                         </div>
