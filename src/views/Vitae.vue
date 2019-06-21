@@ -24,11 +24,13 @@
                             <font-awesome-icon :icon="['fas', 'arrow-left']"></font-awesome-icon>
                             <span class="ml-sm">English Version</span>
                         </router-link>
-                        <router-link class="has-text-black f-control pl-md pr-md" to="/vitae/id"
-                                     v-show="$route.params.lang === 'en'">
-                            <font-awesome-icon :icon="['fas', 'arrow-left']"></font-awesome-icon>
-                            <span class="ml-sm">Versi Bahasa Indonesia</span>
-                        </router-link>
+                        <b-tooltip label="Still Unavailable" type="is-warning" position="is-bottom" animated>
+                            <a class="has-text-black f-control pl-md pr-md disabled"
+                               v-show="$route.params.lang === 'en'">
+                                <font-awesome-icon :icon="['fas', 'arrow-left']"></font-awesome-icon>
+                                <span class="ml-sm">Versi Bahasa Indonesia</span>
+                            </a>
+                        </b-tooltip>
                         <b-tooltip label="Close" class="f-control" type="is-dark" position="is-bottom" animated>
                             <router-link class="has-text-black pl-md pr-md" to="/">
                                 <font-awesome-icon :icon="['fas', 'times']" class="fa-lg"></font-awesome-icon>
@@ -72,21 +74,41 @@
             if(lang !== 'id' && lang !== 'en') {
                 this.$router.push('/*');
             }
+            this.counterLang('id');
         },
         mounted() {
-            const loading = this.$loading.open();
-            const vitae = document.getElementById('file');
-            vitae.onload = (e) => {
-                e.preventDefault();
-                loading.close();
-            }
+            this.loadVitae();
+        },
+        updated() {
+            this.counterLang('id');
+            this.loadVitae();
         },
         methods: {
+            loadVitae() {
+                const loading = this.$loading.open();
+                const vitae = document.getElementById('file');
+                vitae.onload = (e) => {
+                    e.preventDefault();
+                    loading.close();
+                };
+            },
+            counterLang(lang) {
+                if(this.$route.params.lang === lang) {
+                    this.$snackbar.open({
+                        duration: 5*10000,
+                        message: `<b>${lang}</b> version of this page is still unavailable.`,
+                        type: 'is-warning',
+                        position: 'is-bottom-right',
+                        actionText: 'Ok'
+                    });
+                }
+            },
             getData(lang) {
                 if(lang === 'id') {
-                    return 'https://drive.google.com/file/d/1d5byvA9geJr4dQz8DJmANqZtsEhGi3F-/preview';
-                } else {
-                    return 'https://drive.google.com/file/d/1EKbABTmGpP4N8i4Q-kZjV3kAoFZF3j2K/preview';
+                    return null;
+                }
+                if(lang === 'en') {
+                    return 'https://drive.google.com/file/d/1bsoBLmFDDO5Z3XTzz16WZlderPLPbhdr/preview';
                 }
             }
         }

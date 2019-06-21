@@ -32,10 +32,12 @@
                             Available in 2 languages
                         </div>
                         <hr class="navbar-divider">
-                        <router-link class="navbar-item" to="/vitae/id">
-                            <strong class="mr-sm">ID</strong> -
-                            <span class="ml-sm">Bahasa Indonesia</span>
-                        </router-link>
+                        <b-tooltip label="Still Unavailable" type="is-warning" position="is-left" animated>
+                            <a class="navbar-item" disabled>
+                                <strong class="mr-sm">ID</strong> -
+                                <span class="ml-sm">Bahasa Indonesia</span>
+                            </a>
+                        </b-tooltip>
                         <router-link class="navbar-item" to="/vitae/en">
                             <strong class="mr-sm">EN</strong> -
                             <span class="ml-sm">English</span>
@@ -43,7 +45,7 @@
                     </div>
                 </div>
                 <div class="navbar-item has-text-centered">
-                    <b-tooltip label="Under Maintenance" type="is-warning" position="is-bottom">
+                    <b-tooltip label="Under Maintenance" type="is-warning" position="is-bottom" animated>
                         <a class="button is-rounded is-black is-outlined" disabled>
                             <font-awesome-icon :icon="['fas', 'envelope']" class="mr-sm fa-lg"></font-awesome-icon>
                             <b>Get in touch</b>
@@ -79,8 +81,5 @@
     }
     .navbar-item img {
         max-height: 8rem;
-    }
-    nav a {
-        font-family: Titillium Web, sans-serif;
     }
 </style>

@@ -38,18 +38,21 @@
             </div>
         </div>
         <div class="is-pulled-right pr-lg">
-            <a href="#" class="button is-black is-outlined has-text-light">
-                <font-awesome-icon :icon="['fas', 'angle-double-up']" class="fa-2x" ></font-awesome-icon>
-            </a>
+            <b-tooltip label="Back to top" type="is-light" animated>
+                <a href="#" class="button is-black is-outlined has-text-light">
+                    <font-awesome-icon :icon="['fas', 'angle-double-up']" class="fa-2x" ></font-awesome-icon>
+                </a>
+            </b-tooltip>
         </div>
     </footer>
 </template>
 
 <script>
     import SocialButtons from "../SocialButtons";
+    import BTooltip from "buefy/src/components/tooltip/Tooltip";
     export default {
         name: 'Footer',
-        components: {SocialButtons}
+        components: {BTooltip, SocialButtons}
     }
 </script>
 

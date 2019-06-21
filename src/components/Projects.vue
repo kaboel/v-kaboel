@@ -9,12 +9,14 @@
                         <div class="columns">
                             <div class="column is-8-desktop is-offset-2-desktop p-lg carousel-container">
                                 <div class="box carousel-content">
-                                    <a class="button is-rounded">
-                                        <strong>
-                                            <font-awesome-icon :icon="['fas', 'eye']"></font-awesome-icon>
-                                            Take a peek
-                                        </strong>
-                                    </a>
+                                    <b-tooltip label="Still unavailable" type="is-warning" position="is-left" animated>
+                                        <a class="button is-rounded">
+                                            <strong>
+                                                <font-awesome-icon :icon="['fas', 'eye']"></font-awesome-icon>
+                                                Take a peek
+                                            </strong>
+                                        </a>
+                                    </b-tooltip>
                                 </div>
                             </div>
                         </div>
@@ -23,12 +25,14 @@
                         <div class="columns">
                             <div class="column is-8-desktop is-offset-2-desktop p-lg carousel-container">
                                 <div class="box carousel-content">
-                                    <a class="button is-rounded">
-                                        <strong>
-                                            <font-awesome-icon :icon="['fas', 'eye']"></font-awesome-icon>
-                                            Take a peek
-                                        </strong>
-                                    </a>
+                                    <b-tooltip label="Still unavailable" type="is-warning" position="is-left" animated>
+                                        <a class="button is-rounded">
+                                            <strong>
+                                                <font-awesome-icon :icon="['fas', 'eye']"></font-awesome-icon>
+                                                Take a peek
+                                            </strong>
+                                        </a>
+                                    </b-tooltip>
                                 </div>
                             </div>
                         </div>
