@@ -124,6 +124,7 @@
 <script>
     import {Validator} from "vee-validate";
     import BTooltip from "buefy/src/components/tooltip/Tooltip";
+    import axios from 'axios';
     export default {
         name: 'contacts',
         components: {BTooltip},
@@ -141,7 +142,7 @@
                 message: ''
             }
         },
-        mounted() {
+        beforeCreate() {
             this.$validator.localize({
                 en: {
                     attributes: {
@@ -151,24 +152,33 @@
                     }
                 }
             });
-            this.$notification.open({
-                duration: 10*1000,
-                message: "This page is <b>Under Maintenance</b>.<br>Please visit again next time.",
-                type: 'is-warning',
-                position: 'is-bottom-right',
-                hasIcon: true
-            });
         },
         methods: {
             submitForm(e) {
                 e.preventDefault();
-                this.$snackbar.open({
-                    duration: 10*1000,
-                    message: "I'm sorry but this page is <b>Under Maintenance</b>.<br>Please visit and try again next time.",
-                    type: 'is-warning',
-                    position: 'is-bottom-right',
-                    actionText: 'Ok'
+
+                axios.post('http://localhost:8089/api/contacts/', {
+                    name: this.form.surname,
+                    email: this.form.email,
+                    message: this.form.message
+                }).then(() => {
+                    this.$snackbar.open({
+                        duration: 10*1000,
+                        message: 'Your message has sent !',
+                        type: 'is-success',
+                        position: 'is-bottom-right',
+                        actionText: 'Ok'
+                    });
+                }).catch(err => {
+                    this.$snackbar.open({
+                        duration: 10*1000,
+                        message: err.message,
+                        type: 'is-danger',
+                        position: 'is-bottom-right',
+                        actionText: 'Ok'
+                    });
                 });
+
                 this.resetForm();
             },
             resetForm() {
