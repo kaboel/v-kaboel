@@ -45,12 +45,10 @@
                     </div>
                 </div>
                 <div class="navbar-item has-text-centered">
-                    <b-tooltip label="Under Maintenance" type="is-warning" position="is-bottom" animated>
-                        <a class="button is-rounded is-black is-outlined" disabled>
-                            <font-awesome-icon :icon="['fas', 'envelope']" class="mr-sm fa-lg"></font-awesome-icon>
-                            <b>Get in touch</b>
-                        </a>
-                    </b-tooltip>
+                    <router-link class="button is-rounded is-black is-outlined" to="/contact">
+                        <font-awesome-icon :icon="['fas', 'envelope']" class="mr-sm fa-lg"></font-awesome-icon>
+                        <b>Get in touch</b>
+                    </router-link>
                 </div>
             </div>
         </div>
