@@ -157,14 +157,14 @@
             submitForm(e) {
                 e.preventDefault();
 
-                axios.post('http://localhost:8089/api/contacts/', {
+                axios.post('https://x-kaboel.herokuapp.com/api/contacts', {
                     name: this.form.surname,
                     email: this.form.email,
                     message: this.form.message
                 }).then(() => {
                     this.$snackbar.open({
                         duration: 10*1000,
-                        message: 'Your message has sent !',
+                        message: 'Your message has been sent !',
                         type: 'is-success',
                         position: 'is-bottom-right',
                         actionText: 'Ok'
