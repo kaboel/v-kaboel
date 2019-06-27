@@ -45,7 +45,7 @@
                     </div>
                 </div>
                 <div class="navbar-item has-text-centered">
-                    <router-link class="button is-rounded is-black is-outlined" to="/contact">
+                    <router-link class="button is-rounded is-medium is-black is-outlined" to="/contact">
                         <font-awesome-icon :icon="['fas', 'envelope']" class="mr-sm fa-lg"></font-awesome-icon>
                         <b>Get in touch</b>
                     </router-link>

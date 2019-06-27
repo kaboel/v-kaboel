@@ -2,11 +2,14 @@
     <section id="greetings" class="hero">
         <div class="hero-body pl-lg pr-lg" style="padding-top: 0">
             <div class="container has-text-centered">
-                <img src="../assets/glasses.png">
-                <h1 class="title is-3 has-text-centered mb-lg mt-xl">
+                <figure class="image" style="margin: auto">
+                    <img class="is-rounded" src="../assets/4x4.png">
+                </figure>
+<!--                <img src="../assets/glasses.png">-->
+                <h1 class="title is-2 has-text-centered has-text-black mb-lg mt-xl">
                     A Code Junkie, and Full Stack Web Developer
                 </h1>
-                <h1 class="subtitle is-4 has-text-centered titillium mt-lg">
+                <h2 class="subtitle is-4 has-text-centered titillium mt-lg">
                     I make things happen with
                     <b-tooltip
                             label="Codes"
@@ -42,7 +45,7 @@
                         </font-awesome-icon>
                     </b-tooltip>
                     it!
-                </h1>
+                </h2>
             </div>
         </div>
         <div class="has-text-centered mt-xl">
@@ -60,3 +63,12 @@
         }
     }
 </script>
+
+<style scoped>
+    figure {
+        width: 200px;
+    }
+    figure img.is-rounded {
+        border: 5px solid #0A0A0A !important;
+    }
+</style>
