@@ -7,9 +7,10 @@
                         Hey, I'm Faiq. It's very nice to meet you.
                     </h1>
                     <h1 class="subtitle is-5 has-text-light mt-lg">
-                        I'm a Full Stack web developer, design and build Websites and Web Apps.
+                        I am a Full Stack web developer, design and build Websites and Web Apps. I'm passionate in building robust
+                        and solid websites using latest web stack technologies.
                         I have a very high level of curiosity, which maybe dangerous but also can be handy when it comes to a complex project.
-                        I'm also a confident, eager to find out something new, and perpetually improving
+                        I am also a confident, eager to find out something new, and perpetually improving
                         my skill set in what I love, The Web. I am currently pursuing a diploma of Technical Information
                         at State Polytechnic of Malang, and will graduate in 2022.
                     </h1>

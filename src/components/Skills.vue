@@ -92,6 +92,7 @@
                                 <p class="title is-6">Known ORM</p>
                                 <div class="tags is-centered">
                                     <span class="tag is-light is-medium">Eloquent</span>
+                                    <span class="tag is-light is-medium">DataMapper</span>
                                     <span class="tag is-light is-medium">Doctrine</span>
                                     <span class="tag is-light is-medium">Sequelize</span>
                                 </div>
@@ -132,7 +133,7 @@
                                         <div class="tags is-centered">
                                             <span class="tag is-light is-medium">Laravel</span>
                                             <span class="tag is-light is-medium">Lumen</span>
-                                            <span class="tag is-light is-medium">Slim</span>
+                                            <span class="tag is-light is-medium">CodeIgniter</span>
                                         </div>
                                     </div>
                                     <div class="is-divider-vertical p-sm mb-sm"></div>
