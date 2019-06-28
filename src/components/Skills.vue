@@ -1,7 +1,7 @@
 <template>
     <section id="skills">
         <div class="has-text-centered mb-lg title">
-            <p class="subtitle is-5">Here are some of the skills I acquire over the years.</p>
+            <p class="title is-5">Here are some of the skills I acquired over the years :</p>
         </div>
         <div class="columns mb-xl">
             <div class="column is-11-desktop box p-lg p-lg has-background-light">
@@ -185,7 +185,7 @@
     }
     @media(max-width: 1024px) {
         #skills {
-            margin-top: initial;
+            margin-top: 1rem;
         }
         #skills div.title p {
             color: initial;

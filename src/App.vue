@@ -1,19 +1,12 @@
 <template>
     <div id="app">
-        <b-loading :is-full-page="true"></b-loading>
-        <router-view />
+        <router-view/>
     </div>
 </template>
 
 <script>
-    import BLoading from "buefy/src/components/loading/Loading";
     export default {
-        name: 'app',
-        components: {BLoading},
-        mounted() {
-            const loading = this.$loading.open();
-            setTimeout(() => loading.close(), 3*500)
-        }
+        name: 'app'
     }
 </script>
 

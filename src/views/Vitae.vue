@@ -81,7 +81,6 @@
         },
         updated() {
             this.counterLang('id');
-            this.loadVitae();
         },
         methods: {
             loadVitae() {
