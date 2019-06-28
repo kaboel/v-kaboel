@@ -3,17 +3,17 @@
         <div class="hero-body has-background-black has-text-centered">
             <div class="columns">
                 <div class="column is-8-desktop is-offset-2-desktop">
-                    <h1 class="title is-4 has-text-light">
+                    <p class="title is-4 has-text-light">
                         Hey, I'm Faiq. It's very nice to meet you.
-                    </h1>
-                    <h1 class="subtitle is-5 has-text-light mt-lg">
-                        I am a Full Stack web developer, design and build Websites and Web Apps. I'm passionate in building robust
-                        and solid websites using latest web stack technologies.
+                    </p>
+                    <p class="subtitle is-5 has-text-light mt-lg">
+                        I am a Full Stack Web Developer, design and build Websites and Web Apps.
+                        I am passionate in building robust and solid websites using latest web stack technologies.
                         I have a very high level of curiosity, which maybe dangerous but also can be handy when it comes to a complex project.
                         I am also a confident, eager to find out something new, and perpetually improving
-                        my skill set in what I love, The Web. I am currently pursuing a diploma of Technical Information
+                        my skill set in what I love, the <b>Web</b>. I am now currently pursuing a Diploma 4 of Technical Information
                         at State Polytechnic of Malang, and will graduate in 2022.
-                    </h1>
+                    </p>
                 </div>
             </div>
         </div>
@@ -34,5 +34,8 @@
         .columns {
             padding-bottom: 1rem !important;
         }
+    }
+    p.subtitle {
+        line-height: 2rem;
     }
 </style>
