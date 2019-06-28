@@ -17,14 +17,14 @@
 
         <div id="navbarMenu" class="navbar-menu" :class="{'is-active' : navToggle}">
             <div class="navbar-end">
-                <a href="#about" class="navbar-link has-text-black is-arrowless">
+                <a href="#about" class="navbar-link is-arrowless">
                     About
                 </a>
-                <a href="#projects" class="navbar-link has-text-black is-arrowless">
+                <a href="#projects" class="navbar-link is-arrowless">
                     Projects
                 </a>
                 <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link has-text-black">
+                    <a class="navbar-link">
                         Curriculum Vitae
                     </a>
                     <div class="navbar-dropdown is-right">
@@ -32,12 +32,13 @@
                             Available in 2 languages
                         </div>
                         <hr class="navbar-divider">
-                        <b-tooltip label="Still Unavailable" type="is-warning" position="is-left" animated>
-                            <a class="navbar-item" disabled>
-                                <strong class="mr-sm">ID</strong> -
-                                <span class="ml-sm">Bahasa Indonesia</span>
-                            </a>
-                        </b-tooltip>
+
+                        <a class="navbar-item" disabled>
+                            <b-tooltip label="Still Unavailable" type="is-warning" position="is-right" animated always>
+                            <strong class="mr-sm">ID</strong> -
+                            <span class="ml-sm">Bahasa Indonesia</span>
+                            </b-tooltip>
+                        </a>
                         <router-link class="navbar-item" to="/vitae/en">
                             <strong class="mr-sm">EN</strong> -
                             <span class="ml-sm">English</span>
@@ -45,7 +46,7 @@
                     </div>
                 </div>
                 <div class="navbar-item has-text-centered">
-                    <router-link class="button is-rounded is-medium is-black is-outlined" to="/contact">
+                    <router-link class="button is-rounded is-black is-outlined" to="/contact">
                         <font-awesome-icon :icon="['fas', 'envelope']" class="mr-sm fa-lg"></font-awesome-icon>
                         <b>Get in touch</b>
                     </router-link>
@@ -71,13 +72,48 @@
 <style scoped>
     .navbar {
         height: 10rem;
-        padding-left: 3rem !important;
-        padding-right: 3rem !important;
     }
     .navbar-burger {
         margin-top: 2.5rem;
+        -webkit-transition: all .2s ease-in-out;
+        -moz-transition: all .2s ease-in-out;
+        -ms-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
     }
     .navbar-item img {
         max-height: 8rem;
+    }
+
+    .navbar-menu a.navbar-item:hover,
+    .navbar-menu a.navbar-link:hover {
+        background-color: initial;
+        color: #0A0A0A;
+    }
+    @media(max-width: 1024px) {
+        .navbar-menu.is-active {
+            background-color: #f6f6f6 !important;
+            border-top: 0;
+            border-bottom: 1px;
+            border-left: 0px;
+            border-right: 0px;
+            border-style: solid;
+            border-bottom-right-radius: 2rem;
+            border-bottom-left-radius: 2rem;
+            border-color: #ddd;
+            padding-left: .5rem !important;
+            padding-right: .5rem !important;
+            padding-bottom: 1rem !important;
+        }
+
+        .navbar-burger.is-active {
+            background-color: #f6f6f6 !important;
+        }
+
+        .navbar-menu.is-active a.navbar-item:hover,
+        .navbar-menu.is-active a.navbar-link:hover {
+            background-color: initial;
+            color: #0A0A0A;
+        }
     }
 </style>
