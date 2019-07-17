@@ -87,6 +87,14 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="columns">
+                                    <div class="column">
+                                        <div class="is-divider pt-sm m-sm"></div>
+                                        <div class="tags is-centered">
+                                            <span class="tag is-light is-medium">GraphQL</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="box">
                                 <p class="title is-6">Known ORM</p>
