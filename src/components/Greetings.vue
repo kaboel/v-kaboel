@@ -59,14 +59,14 @@
 </template>
 
 <script>
-    import BTooltip from "buefy/src/components/tooltip/Tooltip";
+  import BTooltip from "buefy/src/components/tooltip/Tooltip";
 
-    export default {
-        name: 'greetings',
-        components: {
-            BTooltip
-        }
+  export default {
+    name: 'greetings',
+    components: {
+      BTooltip
     }
+  }
 </script>
 
 <style scoped>
