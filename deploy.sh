@@ -5,7 +5,8 @@ set -e
 npm run build
 
 cd docs
-echo "kaboel.space" > CNAM
+echo "kaboel.space" > CNAME
+
 cd ../
 
 git add .
