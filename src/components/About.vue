@@ -1,19 +1,23 @@
 <template>
-  <section id="about" class="hero is-medium">
-    <div class="hero-body has-background-black has-text-centered">
+  <section class="hero is-medium has-background-black">
+    <div id="about" class="hero-body has-text-justified mt-sm">
       <div class="columns">
-        <div class="column is-8-desktop is-offset-2-desktop">
+        <div class="column is-4-desktop is-offset-4-desktop is-10-mobile is-offset-1-mobile">
           <p class="title is-4 has-text-light">
-            Hey, I'm Faiq. It's very nice to meet you.
+            Hey there! I'm Faiq. Nice to e-meet you!
           </p>
           <p class="subtitle is-5 has-text-light mt-lg">
             I am a Full Stack Web Developer, design and build Websites and Web Apps.
-            I am passionate in building robust and solid websites using latest web stack technologies.
+            I am passionate in building robust and solid web application using the latest web stack technologies.
+          <p class="subtitle is-5 has-text-light mt-sm">
             I have a very high level of curiosity, which maybe dangerous but also can be handy when it comes to a
-            complex project.
-            I am also a confident, eager to find out something new, and perpetually improving
-            my skill set in what I love, the <b>Web</b>. I am currently working for a SaaS Company based in The Netherlands while also
-            pursuing a BASc of Informatics at State Polytechnic of Malang, and will graduate in early 2021.
+            complex problem. I am also a confident and highly persistent engineer. I found an absolute satisfaction
+            when I solve issues around what I love, the <b>Web</b>, it's almost like a fetish, but not sexual!
+           <font-awesome-icon :icon="['fas', 'laugh-squint']" class="fa-lg"/>
+          </p>
+          <p class="subtitle is-5 has-text-light mt-sm">
+            I am currently working for a SaaS Company based in The Netherlands, as a Frontend Engineer, while also
+            pursuing a BASc of Informatics at State Polytechnic of Malang, Indonesia, and will graduate in early 2021.
           </p>
         </div>
       </div>

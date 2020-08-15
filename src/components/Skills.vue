@@ -1,10 +1,10 @@
 <template>
   <section id="skills">
     <div class="has-text-centered mb-lg title">
-      <p class="title is-5">Here are some of the skills I acquired over the years :</p>
+      <p class="title is-5">Now, let me introduce you to my dear friends,</p>
     </div>
     <div class="columns mb-xl">
-      <div class="column is-11-desktop box p-lg p-lg has-background-light">
+      <div class="column column is-8-desktop is-10-mobile is-offset-2-desktop is-offset-1-mobile box p-lg has-background-light">
         <div class="columns">
           <div class="column item">
             <div class="has-text-centered mt-md mb-lg watermark">
@@ -13,7 +13,7 @@
             </div>
             <div class="has-text-centered mb-md">
               <div class="box">
-                <p class="title is-6">Spoken Languages</p>
+                <p class="title is-6">Languages</p>
                 <div class="tags is-centered">
                   <span class="tag is-light is-medium">HTML</span>
                   <span class="tag is-light is-medium">Javascript</span>
@@ -32,6 +32,7 @@
                       <span class="tag is-light is-medium">Bootstrap</span>
                       <span class="tag is-light is-medium">Bulma</span>
                       <span class="tag is-light is-medium">Vuetify</span>
+                      <span class="tag is-light is-medium">Tailwind</span>
                     </div>
                   </div>
                   <div class="is-divider-vertical p-sm mb-sm"></div>
@@ -43,7 +44,7 @@
                     <div class="tags is-centered">
                       <span class="tag is-light is-medium">Jquery</span>
                       <span class="tag is-light is-medium">Vue.js</span>
-                      <span class="tag is-light is-medium">Vuex</span>
+                      <span class="tag is-light is-medium">Angular</span>
                     </div>
                   </div>
                 </div>
@@ -52,11 +53,10 @@
                 <p class="title is-6">Dev Tools</p>
                 <div class="tags is-centered">
                   <span class="tag is-light is-medium">WebStorm</span>
-                  <span class="tag is-light is-medium">GIMP</span>
                   <span class="tag is-light is-medium">npm</span>
                   <span class="tag is-light is-medium">Yarn</span>
                   <span class="tag is-light is-medium">Terminal</span>
-                  <span class="tag is-light is-medium">GitHub</span>
+                  <span class="tag is-light is-medium">Git</span>
                 </div>
               </div>
             </div>
@@ -69,7 +69,7 @@
             </div>
             <div class="has-text-centered mb-md">
               <div class="box">
-                <p class="title is-6">Familiar Databases</p>
+                <p class="title is-6">Databases</p>
                 <div class="columns">
                   <div class="column">
                     <span class="title is-6">Relational</span>
@@ -84,8 +84,8 @@
                     <span class="title is-6">NoSQL</span>
                     <div class="is-divider m-sm"></div>
                     <div class="tags is-centered">
-                      <span class="tag is-light is-medium">Firestore</span>
                       <span class="tag is-light is-medium">MongoDB</span>
+                      <span class="tag is-light is-medium">Firebase</span>
                     </div>
                   </div>
                 </div>
@@ -99,21 +99,21 @@
                 </div>
               </div>
               <div class="box">
-                <p class="title is-6">Known ORM</p>
+                <p class="title is-6">Known ORM/ODM</p>
                 <div class="tags is-centered">
+                  <span class="tag is-light is-medium">Mongoose</span>
                   <span class="tag is-light is-medium">Eloquent</span>
-                  <span class="tag is-light is-medium">DataMapper</span>
-                  <span class="tag is-light is-medium">Doctrine</span>
                   <span class="tag is-light is-medium">Sequelize</span>
                 </div>
               </div>
               <div class="box">
                 <p class="title is-6">Dev Tools</p>
                 <div class="tags is-centered">
+                  <span class="tag is-light is-medium">Compass</span>
                   <span class="tag is-light is-medium">DataGrip</span>
                   <span class="tag is-light is-medium">SQLite</span>
-                  <span class="tag is-light is-medium">pgAdmin</span>
-                  <span class="tag is-light is-medium">Studio 3T/Robo 3T</span>
+                  <span class="tag is-light is-medium">WebStorm</span>
+                  <span class="tag is-light is-medium">PhpStorm</span>
                   <span class="tag is-light is-medium">Terminal</span>
                 </div>
               </div>
@@ -127,10 +127,10 @@
             </div>
             <div class="has-text-centered mb-md">
               <div class="box">
-                <p class="title is-6">Spoken Languages</p>
+                <p class="title is-6">Languages</p>
                 <div class="tags is-centered">
                   <span class="tag is-light is-medium">PHP</span>
-                  <span class="tag is-light is-medium">Node.js</span>
+                  <span class="tag is-light is-medium">JavaScript -&nbsp;<small>with Node.js</small></span>
                 </div>
               </div>
               <div class="box">
@@ -144,7 +144,6 @@
                     <div class="tags is-centered">
                       <span class="tag is-light is-medium">Laravel</span>
                       <span class="tag is-light is-medium">Lumen</span>
-                      <span class="tag is-light is-medium">CodeIgniter</span>
                     </div>
                   </div>
                   <div class="is-divider-vertical p-sm mb-sm"></div>
@@ -170,7 +169,7 @@
                   <span class="tag is-light is-medium">npm</span>
                   <span class="tag is-light is-medium">Yarn</span>
                   <span class="tag is-light is-medium">Terminal</span>
-                  <span class="tag is-light is-medium">GitHub</span>
+                  <span class="tag is-light is-medium">Git</span>
                 </div>
               </div>
             </div>

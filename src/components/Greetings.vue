@@ -25,7 +25,7 @@
             </font-awesome-icon>
             ,
           </b-tooltip>
-          for the
+          on the
           <b-tooltip
                 label="Web"
                 type="is-dark"
@@ -37,7 +37,7 @@
             </font-awesome-icon>
             ,
           </b-tooltip>
-          and God I
+          and I'm
           <b-tooltip
                 label="Love"
                 type="is-dark"
@@ -47,7 +47,7 @@
                   :icon="['fas', 'heart']"
                   class="has-text-danger">
             </font-awesome-icon>
-          </b-tooltip>
+          </b-tooltip>-in'
           it!
         </h2>
       </div>

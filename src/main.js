@@ -10,28 +10,17 @@ import VeeValidate from "vee-validate";
 
 //Fa Solid
 import {
-    faCopyright,
-    faEnvelope,
-    faGlobe,
-    faCode,
-    faHeart,
-    faTimes,
-    faUndo,
-    faAngleDoubleUp,
-    faCheck,
-    faArrowLeft,
-    faSpinner,
-    faCogs,
-    faDatabase,
-    faTools,
-    faCheckCircle,
-    faInfoCircle,
-    faExclamationTriangle,
-    faExclamationCircle,
-    faArrowUp,
-    faAngleUp, faAngleRight, faAngleLeft, faAngleDown, faEye, faEyeSlash, faCaretDown, faCaretUp, faUpload
+    faCopyright, faEnvelope, faGlobe,
+    faCode, faHeart, faTimes,
+    faUndo, faAngleDoubleUp, faCheck,
+    faArrowLeft, faSpinner, faCogs, faDatabase,
+    faTools, faCheckCircle, faInfoCircle,
+    faExclamationTriangle, faExclamationCircle,
+    faArrowUp, faAngleUp, faAngleRight,
+    faAngleLeft, faAngleDown, faEye,
+    faEyeSlash, faCaretDown, faCaretUp,
+    faUpload, faLaughSquint
 } from "@fortawesome/free-solid-svg-icons";
-
 library.add(
     faEnvelope, faCopyright, faGlobe,
     faCode, faHeart, faTimes,
@@ -42,43 +31,33 @@ library.add(
     faArrowUp, faAngleUp, faAngleRight,
     faAngleLeft, faAngleDown, faEye,
     faEyeSlash, faCaretDown, faCaretUp,
-    faUpload
+    faUpload, faLaughSquint
 );
 
 //Fa Regular
 import {
     faSmileWink
 } from "@fortawesome/free-regular-svg-icons";
-
 library.add(
     faSmileWink
 );
 
 //Fa Brand
 import {
-    faAngular,
-    faCss3,
-    faFacebook,
-    faGithub,
-    faHtml5,
-    faJs,
-    faLess,
-    faLinkedin,
-    faNode,
-    faNodeJs,
-    faPhp,
-    faSass,
-    faTwitter,
-    faVuejs,
-    faWhatsapp
+    faAngular, faCss3, faFacebook,
+    faGithub, faHtml5, faJs,
+    faLess, faLinkedin, faNode,
+    faNodeJs, faPhp, faSass,
+    faTwitter, faVuejs, faWhatsapp,
+    faStackOverflow
 } from "@fortawesome/free-brands-svg-icons";
-
 library.add(
     faGithub, faLinkedin, faFacebook,
     faTwitter, faWhatsapp, faPhp,
     faJs, faCss3, faLess, faSass,
     faAngular, faVuejs, faHtml5,
-    faTools, faNodeJs, faNode
+    faTools, faNodeJs, faNode,
+    faStackOverflow
 );
 
 Vue.config.productionTip = false;

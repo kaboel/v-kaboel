@@ -2,11 +2,6 @@
   <form id="contact" autocomplete="off" @submit="submitForm($event)">
     <nav class="navbar is-spaced has-shadow">
       <div class="navbar-brand has-text-centered">
-        <a class="is-size-4 navbar-item" href="/">
-          <img src="../assets/KS-logo-black-160.png"
-               alt="Faiq Allam | A Code Junkie... oh God, I've said those too much">
-        </a>
-
         <div id="navbarBurger" class="navbar-burger burger"
              data-target="navbarMenu"
              @click="navToggle = !navToggle"
