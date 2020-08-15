@@ -6,7 +6,7 @@
           <div class="column is-6-desktop is-offset-3-desktop is-8-mobile is-offset-2-mobile mb-xl">
             <p class="subtitle is-4 has-text-light has-text-centered is-italic" style="margin-bottom: 0 !important;">
               "Though I walk through the valley of the shadow of error,
-              I will fear no bugs, for<br/>
+              I shall fear no bugs, for
               <a class="stack-over" href="https://stackoverflow.com/users/7215223/faiq-kaboel" target="_blank">
                 <font-awesome-icon :icon="['fab', 'stack-overflow']"/> stack overflow
               </a> are with me"
