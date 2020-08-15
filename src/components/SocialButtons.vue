@@ -1,12 +1,12 @@
 <template>
-    <div id="social-buttons">
-        <BTwitter />
-        <BFacebook />
-        <BLinkedIn />
-        <BWhatsapp />
-        <BGithub />
-        <BMail />
-    </div>
+  <div id="social-buttons">
+    <BTwitter/>
+    <BFacebook/>
+    <BLinkedIn/>
+    <BWhatsapp/>
+    <BGithub/>
+    <BMail/>
+  </div>
 </template>
 
 <script>
@@ -16,6 +16,7 @@
     import BWhatsapp from "./buttons/BWhatsapp";
     import BGithub from "./buttons/BGithub";
     import BMail from "./buttons/BMail";
+
     export default {
         name: 'socialButtons',
         components: {BMail, BGithub, BWhatsapp, BLinkedIn, BFacebook, BTwitter}

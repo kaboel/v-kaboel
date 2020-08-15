@@ -1,12 +1,12 @@
 <template>
-    <div id="home">
-        <Header />
-        <Greetings />
-        <About />
-        <Skills />
-        <Projects />
-        <Footer />
-    </div>
+  <div id="home">
+    <Header/>
+    <Greetings/>
+    <About/>
+    <Skills/>
+    <Projects/>
+    <Footer/>
+  </div>
 </template>
 
 <script>
@@ -16,6 +16,7 @@
     import About from "../components/About";
     import Skills from "../components/Skills";
     import Projects from "../components/Projects";
+
     export default {
         name: 'home',
         components: {Projects, Skills, About, Greetings, Footer, Header}
