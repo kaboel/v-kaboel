@@ -12,9 +12,8 @@
             I have a very high level of curiosity, which maybe dangerous but also can be handy when it comes to a
             complex project.
             I am also a confident, eager to find out something new, and perpetually improving
-            my skill set in what I love, the <b>Web</b>. I am now currently pursuing a Diploma 4 of Technical
-            Information
-            at State Polytechnic of Malang, and will graduate in 2022.
+            my skill set in what I love, the <b>Web</b>. I am currently working for a SaaS Company based in The Netherlands while also
+            pursuing a BASc of Informatics at State Polytechnic of Malang, and will graduate in early 2021.
           </p>
         </div>
       </div>
