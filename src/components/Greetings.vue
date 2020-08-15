@@ -4,7 +4,7 @@
       <div class="container has-text-centered">
         <b-tooltip label="Faiq Allam" position="is-right" type="is-dark" animated>
           <figure class="image" style="margin: auto">
-            <img class="is-rounded" src="../assets/4x4.png">
+            <img class="is-rounded" src="../assets/4x4.png" alt="Faiq Allam"/>
           </figure>
         </b-tooltip>
         <!--                <img src="../assets/glasses.png">-->
@@ -53,7 +53,7 @@
       </div>
     </div>
     <div class="has-text-centered mt-xl">
-      <img src="../assets/programmer.png" style="margin-bottom: -.5rem;">
+      <img src="../assets/programmer.png" style="margin-bottom: -.5rem;" alt="Workstation"/>
     </div>
   </section>
 </template>
