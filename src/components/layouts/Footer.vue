@@ -8,8 +8,8 @@
               "Though I walk through the valley of the shadow of error,
               I shall fear no bugs, for
               <a class="stack-over" href="https://stackoverflow.com/users/7215223/faiq-kaboel" target="_blank">
-                <font-awesome-icon :icon="['fab', 'stack-overflow']"/> stack overflow
-              </a> are with me"
+                <font-awesome-icon :icon="['fab', 'stack-overflow']"/> StackOverflow
+              </a> is with me"
             </p>
           </div>
           <div class="mb-lg mt-lg">
@@ -74,9 +74,9 @@
     text-decoration: underline #FFF;
   }
   .stack-over {
-    color: #FFF;
+    color: #ffa100;
   }
   .stack-over:hover {
-    color: orange;
+    color: #ff7700;
   }
 </style>

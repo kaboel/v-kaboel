@@ -19,7 +19,7 @@ import {
     faArrowUp, faAngleUp, faAngleRight,
     faAngleLeft, faAngleDown, faEye,
     faEyeSlash, faCaretDown, faCaretUp,
-    faUpload, faLaughSquint
+    faUpload, faLaughSquint, faExternalLinkAlt,
 } from "@fortawesome/free-solid-svg-icons";
 library.add(
     faEnvelope, faCopyright, faGlobe,
@@ -31,7 +31,7 @@ library.add(
     faArrowUp, faAngleUp, faAngleRight,
     faAngleLeft, faAngleDown, faEye,
     faEyeSlash, faCaretDown, faCaretUp,
-    faUpload, faLaughSquint
+    faUpload, faLaughSquint, faExternalLinkAlt
 );
 
 //Fa Regular

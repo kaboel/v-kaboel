@@ -1,7 +1,7 @@
 <template>
   <section id="skills">
     <div class="has-text-centered mb-lg title">
-      <p class="title is-5">Now, let me introduce you to my dear friends,</p>
+      <p class="title is-5">These are some of the skills I've obtained throughout my software engineering journey</p>
     </div>
     <div class="columns mb-xl">
       <div class="column column is-8-desktop is-10-mobile is-offset-2-desktop is-offset-1-mobile box p-lg has-background-light">
@@ -9,7 +9,7 @@
           <div class="column item">
             <div class="has-text-centered mt-md mb-lg watermark">
               <font-awesome-icon :icon="['fas', 'code']" class="fa-4x has-text-black"></font-awesome-icon>
-              <p class="title is-5 mt-md has-text-black">Front-end</p>
+              <p class="title is-5 mt-md has-text-black">Front-End</p>
             </div>
             <div class="has-text-centered mb-md">
               <div class="box">
@@ -38,8 +38,9 @@
                   <div class="is-divider-vertical p-sm mb-sm"></div>
                   <div class="column">
                     <font-awesome-icon :icon="['fab', 'js']" class="fa-2x"></font-awesome-icon>
+                    <font-awesome-icon :icon="['fab', 'ts']" class="fa-2x"></font-awesome-icon>
                     <br>
-                    <span class="title is-6">Javascript</span>
+                    <span class="title is-6">JavaScript/TypeScript</span>
                     <div class="is-divider m-sm"></div>
                     <div class="tags is-centered">
                       <span class="tag is-light is-medium">Jquery</span>
@@ -123,7 +124,7 @@
           <div class="column item">
             <div class="has-text-centered watermark mt-md mb-lg">
               <font-awesome-icon :icon="['fas', 'cogs']" class="fa-4x has-text-black"></font-awesome-icon>
-              <p class="title is-5 mt-md has-text-black">Back-end</p>
+              <p class="title is-5 mt-md has-text-black">Back-End</p>
             </div>
             <div class="has-text-centered mb-md">
               <div class="box">

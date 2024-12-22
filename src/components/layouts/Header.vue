@@ -1,10 +1,10 @@
 <template>
   <nav class="navbar is-spaced is-transparent" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-      <a class="navbar-item" href="#">
+      <!-- <a class="navbar-item" href="#">
         <img src="../../assets/KS-skillet-black-128x128.png"
              alt="Faiq Allam | A Code Junkie, and Full Stack Web Developer">
-      </a>
+      </a> -->
 
       <div id="navbarBurger" class="navbar-burger burger"
            data-target="navbarMenu"
@@ -24,28 +24,10 @@
         <a href="#projects" class="navbar-link is-arrowless">
           Projects
         </a>
-        <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link">
-            Curriculum Vitae
-          </a>
-          <div class="navbar-dropdown is-right">
-            <div class="navbar-item has-text-grey-light">
-              Available in 2 languages
-            </div>
-            <hr class="navbar-divider">
-
-            <a class="navbar-item" disabled>
-              <b-tooltip label="Still Unavailable" type="is-warning" position="is-right" animated always>
-                <strong class="mr-sm">ID</strong> -
-                <span class="ml-sm">Bahasa Indonesia</span>
-              </b-tooltip>
-            </a>
-            <router-link class="navbar-item" to="/vitae/en">
-              <strong class="mr-sm">EN</strong> -
-              <span class="ml-sm">English</span>
-            </router-link>
-          </div>
-        </div>
+        <a href="./resume-en.pdf" target="_blank" class="navbar-link is-arrowless">
+          Résumé 
+          <font-awesome-icon :icon="['fas', 'external-link-alt']" class="ml-sm" />
+        </a>
         <div class="navbar-item has-text-centered">
           <router-link class="button is-rounded is-black is-outlined" to="/contact">
             <font-awesome-icon :icon="['fas', 'envelope']" class="mr-sm fa-lg"></font-awesome-icon>
@@ -58,17 +40,15 @@
 </template>
 
 <script>
-    import BTooltip from "buefy/src/components/tooltip/Tooltip";
 
-    export default {
-        name: 'Header',
-        components: {BTooltip},
-        data() {
-            return {
-                navToggle: false
-            }
-        }
+  export default {
+    name: 'Header',
+    data() {
+      return {
+          navToggle: false
+      }
     }
+  }
 </script>
 
 <style scoped>

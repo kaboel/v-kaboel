@@ -2,17 +2,16 @@
   <section id="greetings" class="hero">
     <div class="hero-body pl-lg pr-lg" style="padding-top: 0">
       <div class="container has-text-centered">
-        <b-tooltip label="Faiq Allam" position="is-right" type="is-dark" animated>
+        <b-tooltip label="Faiq Allam" position="is-right" type="is-dark" always>
           <figure class="image" style="margin: auto">
             <img class="is-rounded" src="../assets/4x4.png" alt="Faiq Allam"/>
           </figure>
         </b-tooltip>
-        <!--                <img src="../assets/glasses.png">-->
         <h1 class="title is-2 has-text-centered has-text-black mb-lg mt-lg">
-          A Code Junkie, and Full Stack Web Developer
+          A Seasoned Software Engineer
         </h1>
-        <h2 class="subtitle is-4 has-text-centered titillium mt-lg">
-          I make things happen with
+        <h2 class="subtitle is-4 has-text-centered titillium">
+          I innovate and solve problems through
           <b-tooltip
                 label="Codes"
                 type="is-dark"
@@ -37,7 +36,7 @@
             </font-awesome-icon>
             ,
           </b-tooltip>
-          and I'm
+          and I
           <b-tooltip
                 label="Love"
                 type="is-dark"
@@ -47,7 +46,7 @@
                   :icon="['fas', 'heart']"
                   class="has-text-danger">
             </font-awesome-icon>
-          </b-tooltip>-in'
+          </b-tooltip>
           it!
         </h2>
       </div>
@@ -76,5 +75,15 @@
 
   figure img.is-rounded {
     border: 5px solid #0A0A0A !important;
+  }
+
+  @media (max-width: 1024px) {
+    h1 {
+      font-size: 22px !important;
+    }
+
+    h2 {
+      font-size: 18px !important;
+    }
   }
 </style>

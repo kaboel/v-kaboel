@@ -2,7 +2,7 @@
   <section id="projects">
     <div class="columns">
       <div class="column has-text-centered mb-lg">
-        <p class="title is-3">My Recent Works</p>
+        <p class="title is-3">Projects</p>
         <p class="subtitle is-5">These are some of the things I've made.</p>
         <flickity ref="flickity" :options="flickityOptions">
           <div class="carousel-cell">
@@ -85,30 +85,30 @@
 </template>
 
 <script>
-    import Flickity from 'vue-flickity';
-    import BTooltip from "buefy/src/components/tooltip/Tooltip";
+  import Flickity from 'vue-flickity';
+  import BTooltip from "buefy/src/components/tooltip/Tooltip";
 
-    export default {
-        name: 'projects',
-        components: {BTooltip, Flickity},
-        data() {
-            return {
-                flickityOptions: {
-                    prevNextButtons: false,
-                    pageDots: true,
-                    wrapAround: true
-                }
-            }
-        },
-        methods: {
-            next() {
-                this.$refs.flickity.next();
-            },
-            prev() {
-                this.$refs.flickity.previous();
-            }
+  export default {
+    name: 'projects',
+    components: {BTooltip, Flickity},
+    data() {
+      return {
+        flickityOptions: {
+          prevNextButtons: false,
+          pageDots: true,
+          wrapAround: true
         }
+      }
+    },
+    methods: {
+      next() {
+        this.$refs.flickity.next();
+      },
+      prev() {
+        this.$refs.flickity.previous();
+      }
     }
+  }
 </script>
 
 <style scoped>
